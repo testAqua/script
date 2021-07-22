@@ -18,7 +18,7 @@ if (!(Test-Path $Destination)) {
 
 $sourceFiles = Get-ChildItem -Path $Source -Recurse
 if (!$sourceFiles) {
-    Write-Output "Source directory doesn,t contain files"
+    Write-Output "No files, sry"
 }
 else {
     foreach ($file in $sourceFiles) {
